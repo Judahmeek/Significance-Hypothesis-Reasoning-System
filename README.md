@@ -1,8 +1,10 @@
 # Significance-Hypothesis-Based-ARC-AGI-2-puzzle-solver
+
 A proof of concept for specifying how humans solve ARC-AGI-2 puzzles
 
-## Slack
-Join me on [a dedicated Slack workspace](https://join.slack.com/t/shbarcagi2puz-int9037/shared_invite/zt-3k0qx6oly-SvinliPi8bjFCNjbP1AcJQ) to discuss this project
+**Slack:** Join me on [a dedicated Slack workspace](https://join.slack.com/t/shbarcagi2puz-int9037/shared_invite/zt-3k0qx6oly-SvinliPi8bjFCNjbP1AcJQ) to discuss this project  
+**Github:** Join me on [Github](https://github.com/Judahmeek/Significance-Hypothesis-Based-ARC-AGI-2-puzzle-solver) to actually begin the process of implementing the puzzle solver and test suite.  
+**Google Docs:** If you would like to just quickly view the Specification Document and send me some suggestions, you can do so through [Our Google Document](https://docs.google.com/document/d/1wYJyRsPdqNkTecePCfWnnby70mRbmoS4XpySJp_BhC0/edit?usp=sharing).
 
 **Problem Domain**:  
 Current artificial intelligence (AI) reasoning systems score low on ARC-AGI-2 because the challenge is specifically designed to expose their weaknesses in novel visual reasoning, compositional reasoning, and contextual rule application, whereas earlier versions of the benchmark were susceptible to brute-force methods and pattern matching from training data. Unlike ARC-AGI-1, every task in the newer benchmark is unique, demanding a deeper, human-like understanding of concepts rather than just recognizing or adapting pre-learned patterns.  
