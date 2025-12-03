@@ -1,12 +1,14 @@
 # Significance-Hypothesis-Based-ARC-AGI-2-puzzle-solver
+#### Desperately seeking feedback and contributors!!! I'm smart, but I'm not Einstein
 
-A proof of concept for specifying how humans solve ARC-AGI-2 puzzles
+This is a Draft Specification for a proof of concept for specifying how humans solve problem, restricted at the moment to ARC-AGI-2 puzzles. Implementation to begin probably today (First, I want to check the ARC-AGI Discord for solutions to the few puzzles that I couldn't solve, and then I'm considering running through the Solution Specification process for another puzzle before beginning implementation.) 
 
+**Collaboration Platforms:**
 **Slack:** Join me on [a dedicated Slack workspace](https://join.slack.com/t/shbarcagi2puz-int9037/shared_invite/zt-3k0qx6oly-SvinliPi8bjFCNjbP1AcJQ) to discuss this project  
 **Github:** Join me on [Github](https://github.com/Judahmeek/Significance-Hypothesis-Based-ARC-AGI-2-puzzle-solver) to actually begin the process of implementing the puzzle solver and test suite.  
 **Google Docs:** If you would like to just quickly view the Specification Document and send me some suggestions, you can do so through [Our Google Document](https://docs.google.com/document/d/1wYJyRsPdqNkTecePCfWnnby70mRbmoS4XpySJp_BhC0/edit?usp=sharing).
 
-**Problem Domain**:  
+**Problem Domain:** 
 Current artificial intelligence (AI) reasoning systems score low on ARC-AGI-2 because the challenge is specifically designed to expose their weaknesses in novel visual reasoning, compositional reasoning, and contextual rule application, whereas earlier versions of the benchmark were susceptible to brute-force methods and pattern matching from training data. Unlike ARC-AGI-1, every task in the newer benchmark is unique, demanding a deeper, human-like understanding of concepts rather than just recognizing or adapting pre-learned patterns.  
 **Specific challenges of ARC-AGI-2**:
 
@@ -16,12 +18,12 @@ Current artificial intelligence (AI) reasoning systems score low on ARC-AGI-2 be
 * Contextual application: Systems have difficulty applying rules differently based on the context of the task, instead tending to apply a single rule in a fixed way.  
 * Inability to adapt: The benchmark is designed to prevent models from overcoming problems with sheer computational power or brute-force approaches, forcing them to solve tasks efficiently and adapt to new situations in a way that mimics human problem-solving strategies.
 
-**Intent**: Go through a number of the ARC-AGI-2 training set problems & document my personal organic solution process until the solution process can be abstracted into a competitive problem solver.  
+**Intent:** Go through a number of the ARC-AGI-2 training set problems & document my personal organic solution process until the solution process can be abstracted into a competitive problem solver.  
 Implement the abstracted solution process & test it on the remaining problems & ARC-AGI-2 evaluation set (and other similar significant benchmarks, such as those listed here: [https://news.ycombinator.com/item?id=45964748](https://news.ycombinator.com/item?id=45964748))
 
-**Enlightening Human Tool Search Experience**: When trying to pull a stuck sock out of a vacuum hose, I searched for various tools after being able to think of an accessible version of the first, most obvious tool I thought of (a hook). After trying to use other tools (an umbrella to push the sock through the hose, a chopsticks like measuring device, a serrated knife, a two-pronged meat skewer, pliers which proved too wide for the hole, tweezers which were far too small), I expended more cognitive effort on possible hooks & realized that I had some appropriately shaped dental hygiene tools. (My search heuristics repeatedly swapped between searching specific locations for possible tools & searching possible locations for specific tools)
+**Enlightening Human Tool Search Experience:** When trying to pull a stuck sock out of a vacuum hose, I searched for various tools after being able to think of an accessible version of the first, most obvious tool I thought of (a hook). After trying to use other tools (an umbrella to push the sock through the hose, a chopsticks like measuring device, a serrated knife, a two-pronged meat skewer, pliers which proved too wide for the hole, tweezers which were far too small), I expended more cognitive effort on possible hooks & realized that I had some appropriately shaped dental hygiene tools. (My search heuristics repeatedly swapped between searching specific locations for possible tools & searching possible locations for specific tools)
 
-**Syntax**:
+**Syntax:**
 
 * **Significance Hypothesis**: a hypothesis that a relationship between two entities is significant to solving the puzzle  
 * \~\~\~X\~\~\~ represents a meta TODO comment for improving this document  
@@ -40,7 +42,7 @@ Implement the abstracted solution process & test it on the remaining problems & 
 * **Isolate**: The prediction of application of all beliefs to a minimal group of inputs  
 * **Piece**: a group of squares of the same color that are near each other, as defined by the relevant starting significance hypothesis
 
-**Heuristics**:
+**Heuristics:**
 
 * **Search**: From simple to more complex. For graph search specifically, top to bottom, left to right  
 * **Relationship Complexity**:  
@@ -51,13 +53,13 @@ Implement the abstracted solution process & test it on the remaining problems & 
   * When presented with a choice of seemingly isolated problems, start with the problem with the fewest inputs and constants; tie-breakers are number of inputs, number of squares in said inputs, then the position & value of the first problem output diff found by our search heuristic  
   * My actual organic heuristic is to choose the simplest problem with the least amount of factors involved after identifying likely patterns
 
-**Starting Significance Hypotheses**:
+**Starting Significance Hypotheses:**
 
 * **Significance Hypothesis**: relationships between squares with the same color are highly significant  
 * **Significance Hypothesis**: squares can be grouped with adjacent & diagonally adjacent squares of the same color as a single “piece”  
   * At some point in a belief search, squares of the same color at greater distances from each other than immediate adjacency can be considered parts of the same piece
 
-**Puzzle Solutions**:  
+**Puzzle Solutions:**  
 1 of 120 Public Evaluation Set V2 [https://arcprize.org/play?task=1ae2feb7](https://arcprize.org/play?task=1ae2feb7)
 
 * Identify constant colors (Example 1: red & pink, Example 3: red), constants (the red vertical piece in Example 2), inputs (everything left of the constant), & outputs (all the new blocks)  
@@ -99,597 +101,360 @@ Implement the abstracted solution process & test it on the remaining problems & 
 
 ---
 
+**Puzzles Awaiting Solution Specification:**
 [**2 of 120**](https://arcprize.org/play?task=3e6067c3) **Public Evaluation Set V2** **Human Solution**: Recognize that the outputs link the inputs in the order of the single inputs that are not wrapped in rings of constants
-
-* Identification Step
 
 [**3 of 120**](https://arcprize.org/play?task=16b78196) **Public Evaluation Set V2** **Human Solution**: Recognize that inputs get “plugged” into constant to full rectangular “limbs”
 
-* Identification Step
-
 [**4 of 120**](https://arcprize.org/play?task=142ca369) **Public Evaluation Set V2** **Human Solution**: I actually had trouble with this puzzle because if the beams grow one square at a time, the examples suggest the beams could deflect off each other and then collide (same block), which would lead to a scenario that isn’t addressed by any of the examples
-
-* Identification Step
 
 [**5 of 120**](https://arcprize.org/play?task=136b0064) **Public Evaluation Set V2**  
 **Human Solution**: it’s a map puzzle\!
 
-* Identification Step
-
 [**6 of 120**](https://arcprize.org/play?task=0934a4d8) **Public Evaluation Set V2**  
 **Human Solution**: The size of the output graph is highly relevant here
-
-* Identification Step
 
 [**7 of 120**](https://arcprize.org/play?task=135a2760) **Public Evaluation Set V2**  
 **Human Solution**: simple? Pattern recognition
 
-* Identification Step
-
 [**8 of 120**](https://arcprize.org/play?task=13e47133) **Public Evaluation Set V2**  
 **Human Solution**: Serious abstraction exercise
 
-* Identification Step
-
 [**9 of 120**](https://arcprize.org/play?task=1818057f) **Public Evaluation Set V2**  
-**Human Solution**: \+
-
-* Identification Step
+**Human Solution**: It's all about the plus symbol.
 
 [**10 of 120**](https://arcprize.org/play?task=195c6913) **Public Evaluation Set V2**  
 **Human Solution**: another symbolism map
 
-* Identification Step
-
 [**11 of 120**](https://arcprize.org/play?task=20270e3b) **Public Evaluation Set V2**  
 **Human Solution**: linkage puzzle
-
-* Identification Step
 
 [**12 of 120**](https://arcprize.org/play?task=20a9e565) **Public Evaluation Set V2**  
 **Human Solution**: output graph size matters again
 
-* Identification Step
-
 [**13 of 120**](https://arcprize.org/play?task=21897d95) **Public Evaluation Set V2**  
 **Human Solution**: input & output graphs have inverted sizes
-
-* Identification Step
 
 [**14 of 120**](https://arcprize.org/play?task=221dfab4) **Public Evaluation Set V2**  
 **Human Solution**: making a trail? Line pattern for sure.
 
-* Identification Step
-
 [**15 of 120**](https://arcprize.org/play?task=247ef758) **Public Evaluation Set V2**  
 **Human Solution**: Does it fit?\!
-
-* Identification Step
 
 [**16 of 120**](https://arcprize.org/play?task=269e22fb) **Public Evaluation Set V2**  
 **Human Solution**: This one is fucking crazy. Got to figure out that the output graph is always the same except for color & orientation, which means comparing examples\!
 
-* Identification Step
-
 [**17 of 120**](https://arcprize.org/play?task=271d71e2) **Public Evaluation Set V2**  
 **Human Solution**: Lots of complex relationships in this one
-
-* Identification Step
 
 [**18 of 120**](https://arcprize.org/play?task=28a6681f) **Public Evaluation Set V2**  
 **Human Solution**: A water/liquid based puzzle
 
-* Identification Step
-
 [**19 of 120**](https://arcprize.org/play?task=291dc1e1) **Public Evaluation Set V2**  
 **Human Solution**: graph sizes are relevant again
-
-* Identification Step
 
 [**20 of 120**](https://arcprize.org/play?task=2b83f449) **Public Evaluation Set V2**  
 **Human Solution**: This puzzle contains a chronological element. No idea how to code that\! 😂
 
-* Identification Step
-
 [**21 of 120**](https://arcprize.org/play?task=2ba387bc) **Public Evaluation Set V2**  
 **Human Solution**: Seems like a simple? ordering puzzle
-
-* Identification Step
 
 [**22 of 120**](https://arcprize.org/play?task=2c181942) **Public Evaluation Set V2**  
 **Human Solution**: Seems like a simple? linking puzzle
 
-* Identification Step
-
 [**23 of 120**](https://arcprize.org/play?task=2d0172a1) **Public Evaluation Set V2**  
 **Human Solution**: Approximate a square? Fuck me.
-
-* Identification Step
 
 [**24 of 120**](https://arcprize.org/play?task=31f7f899) **Public Evaluation Set V2**  
 **Human Solution**: stacking is simple. Ordering maybe less so.
 
-* Identification Step
-
 [**25 of 120**](https://arcprize.org/play?task=332f06d7) **Public Evaluation Set V2**  
 **Human Solution**: basic maze puzzle
-
-* Identification Step
 
 [**26 of 120**](https://arcprize.org/play?task=35ab12c3) **Public Evaluation Set V2**  
 **Human Solution**: basic symbolism puzzle
 
-* Identification Step
-
 [**27 of 120**](https://arcprize.org/play?task=36a08778) **Public Evaluation Set V2**  
 **Human Solution**: basic liquid puzzle
-
-* Identification Step
 
 [**28 of 120**](https://arcprize.org/play?task=38007db0) **Public Evaluation Set V2**  
 **Human Solution**: basic liquid puzzle
 
-* Identification Step
-
 [**29 of 120**](https://arcprize.org/play?task=3a25b0d8) **Public Evaluation Set V2**  
 **Human Solution**: color fill
-
-* Identification Step
 
 [**30 of 120**](https://arcprize.org/play?task=3dc255db) **Public Evaluation Set V2**  
 **Human Solution**: This puzzle is simple, but I don’t have a simple description for it
 
-* Identification Step
-
 [**31 of 120**](https://arcprize.org/play?task=409aa875) **Public Evaluation Set V2**  
 **Human Solution**: bullet collisions
-
-* Identification Step
 
 [**32 of 120**](https://arcprize.org/play?task=446ef5d2) **Public Evaluation Set V2**  
 **Human Solution**: the symbol that communicate outer corner will be interesting to figure out
 
-* Identification Step
-
 [**33 of 120**](https://arcprize.org/play?task=45a5af55) **Public Evaluation Set V2**  
 **Human Solution**: lines to square
-
-* Identification Step
 
 [**34 of 120**](https://arcprize.org/play?task=4a21e3da) **Public Evaluation Set V2**  
 **Human Solution**: shape dissection
 
-* Identification Step
-
 [**35 of 120**](https://arcprize.org/play?task=4c3d4a41) **Public Evaluation Set V2**  
 **Human Solution**: piece displacement
-
-* Identification Step
 
 [**36 of 120**](https://arcprize.org/play?task=4c416de3) **Public Evaluation Set V2**  
 **Human Solution**: find the odd thing out
 
-* Identification Step
-
 [**37 of 120**](https://arcprize.org/play?task=4c7dc4dd) **Public Evaluation Set V2**  
 **Human Solution**: Puzzle \#1 looks to be filtering out the noise
-
-* Identification Step
 
 [**38 of 120**](https://arcprize.org/play?task=4e34c42c) **Public Evaluation Set V2**  
 **Human Solution**: another linking puzzle
 
-* Identification Step
-
 [**39 of 120**](https://arcprize.org/play?task=53fb4810) **Public Evaluation Set V2**  
 **Human Solution**: Beam cannons\!\!\!
-
-* Identification Step
 
 [**40 of 120**](https://arcprize.org/play?task=5545f144) **Public Evaluation Set V2**  
 **Human Solution**: Here, fishy, fishy, fishy
 
-* Identification Step
-
 [**41 of 120**](https://arcprize.org/play?task=581f7754) **Public Evaluation Set V2**  
 **Human Solution**: center line
-
-* Identification Step
 
 [**42 of 120**](https://arcprize.org/play?task=58490d8a) **Public Evaluation Set V2**  
 **Human Solution**: combining symbols
 
-* Identification Step
-
 [**43 of 120**](https://arcprize.org/play?task=58f5dbd5) **Public Evaluation Set V2**  
 **Human Solution**: combining symbols
-
-* Identification Step
 
 [**44 of 120**](https://arcprize.org/play?task=5961cc34) **Public Evaluation Set V2**  
 **Human Solution**: a two-step process
 
-* Identification Step
-
 [**45 of 120**](https://arcprize.org/play?task=5dbc8537) **Public Evaluation Set V2**  
 **Human Solution**: applying colors
-
-* Identification Step
 
 [**46 of 120**](https://arcprize.org/play?task=62593bfd) **Public Evaluation Set V2**  
 **Human Solution**: something about gravity
 
-* Identification Step
-
 [**47 of 120**](https://arcprize.org/play?task=64efde09) **Public Evaluation Set V2**  
 **Human Solution**: combining applied knowledge
-
-* Identification Step
 
 [**48 of 120**](https://arcprize.org/play?task=65b59efc) **Public Evaluation Set V2**  
 **Human Solution**: tik tak toe
 
-* Identification Step
-
 [**49 of 120**](https://arcprize.org/play?task=67e490f4) **Public Evaluation Set V2**  
 **Human Solution**: pick the right one & insert it
-
-* Identification Step
 
 [**50 of 120**](https://arcprize.org/play?task=6e453dd6) **Public Evaluation Set V2**  
 **Human Solution**: I love the color scheme for this puzzle
 
-* Identification Step
-
 [**51 of 120**](https://arcprize.org/play?task=6e4f6532) **Public Evaluation Set V2**  
 **Human Solution**: definitely can expect changing colors between tests & examples
-
-* Identification Step
 
 [**52 of 120**](https://arcprize.org/play?task=6ffbe589) **Public Evaluation Set V2**  
 **Human Solution**: This puzzle is unintuitive for me
 
-* Identification Step
-
 [**53 of 120**](https://arcprize.org/play?task=71e489b6) **Public Evaluation Set V2**  
 **Human Solution**: Identify packet loss
-
-* Identification Step
 
 [**54 of 120**](https://arcprize.org/play?task=7491f3cf) **Public Evaluation Set V2**  
 **Human Solution**: pattern fusion\!
 
-* Identification Step
-
 [**55 of 120**](https://arcprize.org/play?task=7666fa5d) **Public Evaluation Set V2**  
 **Human Solution**: fill in between the lines
-
-* Identification Step
 
 [**56 of 120**](https://arcprize.org/play?task=78332cb0) **Public Evaluation Set V2**  
 **Human Solution**: linking path
 
-* Identification Step
-
 [**57 of 120**](https://arcprize.org/play?task=7b0280bc) **Public Evaluation Set V2**  
 **Human Solution**: pathfinding puzzle
-
-* Identification Step
 
 [**58 of 120**](https://arcprize.org/play?task=7b3084d4) **Public Evaluation Set V2**  
 **Human Solution**: Go Go, Power Rangers\!
 
-* Identification Step
-
 [**59 of 120**](https://arcprize.org/play?task=7b5033c1) **Public Evaluation Set V2**  
 **Human Solution**: What. The. Fuck.
-
-* Identification Step
 
 [**60 of 120**](https://arcprize.org/play?task=7b80bb43) **Public Evaluation Set V2**  
 **Human Solution**: fix the broken path
 
-* Identification Step
-
 [**61 of 120**](https://arcprize.org/play?task=7c66cb00) **Public Evaluation Set V2**  
 **Human Solution**: breakdown & shelve the parts
-
-* Identification Step
 
 [**62 of 120**](https://arcprize.org/play?task=7ed72f31) **Public Evaluation Set V2**  
 **Human Solution**: regenerate missing half
 
-* Identification Step
-
 [**63 of 120**](https://arcprize.org/play?task=800d221b) **Public Evaluation Set V2**  
 **Human Solution**: ant nest puzzle
-
-* Identification Step
 
 [**64 of 120**](https://arcprize.org/play?task=80a900e0) **Public Evaluation Set V2**  
 **Human Solution**: pull signal from noise
 
-* Identification Step
-
 [**65 of 120**](https://arcprize.org/play?task=8698868d) **Public Evaluation Set V2**  
 **Human Solution**: holey, holey, holey
-
-* Identification Step
 
 [**66 of 120**](https://arcprize.org/play?task=88bcf3b4) **Public Evaluation Set V2**  
 **Human Solution**: whip slap
 
-* Identification Step
-
 [**67 of 120**](https://arcprize.org/play?task=88e364bc) **Public Evaluation Set V2**  
 **Human Solution**: levers & switches
-
-* Identification Step
 
 [**68 of 120**](https://arcprize.org/play?task=89565ca0) **Public Evaluation Set V2**  
 **Human Solution**: one hell of a simplication
 
-* Identification Step
-
 [**69 of 120**](https://arcprize.org/play?task=898e7135) **Public Evaluation Set V2**  
 **Human Solution**: combine parts, ignore rest
-
-* Identification Step
 
 [**70 of 120**](https://arcprize.org/play?task=8b7bacbf) **Public Evaluation Set V2**  
 **Human Solution**: flower the path
 
-* Identification Step
-
 [**71 of 120**](https://arcprize.org/play?task=8b9c3697) **Public Evaluation Set V2**  
 **Human Solution**: attach engines?
-
-* Identification Step
 
 [**72 of 120**](https://arcprize.org/play?task=8e5c0c38) **Public Evaluation Set V2**  
 **Human Solution**: remove asymmetries
 
-* Identification Step
-
 [**73 of 120**](https://arcprize.org/play?task=8f215267) **Public Evaluation Set V2**  
 **Human Solution**: count the small pieces
-
-* Identification Step
 
 [**74 of 120**](https://arcprize.org/play?task=8f3a5a89) **Public Evaluation Set V2**  
 **Human Solution**: draw the border
 
-* Identification Step
-
 [**75 of 120**](https://arcprize.org/play?task=9385bd28) **Public Evaluation Set V2**  
 **Human Solution**: with our powers combined\!
-
-* Identification Step
 
 [**76 of 120**](https://arcprize.org/play?task=97d7923e) **Public Evaluation Set V2**  
 **Human Solution**: pick sticks by length
 
-* Identification Step
-
 [**77 of 120**](https://arcprize.org/play?task=981571dc) **Public Evaluation Set V2**  
 **Human Solution**: no idea, but sure is colorful
-
-* Identification Step
 
 [**78 of 120**](https://arcprize.org/play?task=9aaea919) **Public Evaluation Set V2**  
 **Human Solution**: stacking pots?
 
-* Identification Step
-
 [**79 of 120**](https://arcprize.org/play?task=9bbf930d) **Public Evaluation Set V2**  
 **Human Solution**: two lines \= path
-
-* Identification Step
 
 [**80 of 120**](https://arcprize.org/play?task=a251c730) **Public Evaluation Set V2**  
 **Human Solution**: why the fields of flowers?
 
-* Identification Step
-
 [**81 of 120**](https://arcprize.org/play?task=a25697e4) **Public Evaluation Set V2**  
 **Human Solution**: sticking the right end in the hole
-
-* Identification Step
 
 [**82 of 120**](https://arcprize.org/play?task=a32d8b75) **Public Evaluation Set V2**  
 **Human Solution**: combining four different symbols
 
-* Identification Step
-
 [**83 of 120**](https://arcprize.org/play?task=a395ee82) **Public Evaluation Set V2**  
 **Human Solution**: clone a template
-
-* Identification Step
 
 [**84 of 120**](https://arcprize.org/play?task=a47bf94d) **Public Evaluation Set V2**  
 **Human Solution**: separating interlocked, same value pieces
 
-* Identification Step
-
 [**85 of 120**](https://arcprize.org/play?task=a6f40cea) **Public Evaluation Set V2**  
 **Human Solution**: predict what is hidden
-
-* Identification Step
 
 [**86 of 120**](https://arcprize.org/play?task=aa4ec2a5) **Public Evaluation Set V2**  
 **Human Solution**: make a face\!
 
-* Identification Step
-
 [**87 of 120**](https://arcprize.org/play?task=abc82100) **Public Evaluation Set V2**  
 **Human Solution**: seems simple enough
-
-* Identification Step
 
 [**88 of 120**](https://arcprize.org/play?task=b0039139) **Public Evaluation Set V2**  
 **Human Solution**: What. The. Fuck.
 
-* Identification Step
-
 [**89 of 120**](https://arcprize.org/play?task=b10624e5) **Public Evaluation Set V2**  
 **Human Solution**: generalize features
-
-* Identification Step
 
 [**90 of 120**](https://arcprize.org/play?task=b5ca7ac4) **Public Evaluation Set V2**  
 **Human Solution**: separate by category
 
-* Identification Step
-
 [**91 of 120**](https://arcprize.org/play?task=b6f77b65) **Public Evaluation Set V2**  
 **Human Solution**: removing colors
-
-* Identification Step
 
 [**92 of 120**](https://arcprize.org/play?task=16de56c4) **Public Evaluation Set V2**  
 **Human Solution**: basic line patterns
 
-* Identification Step
-
 [**93 of 120**](https://arcprize.org/play?task=b99e7126) **Public Evaluation Set V2**  
 **Human Solution**: blanket pattern?
-
-* Identification Step
 
 [**94 of 120**](https://arcprize.org/play?task=b9e38dc0) **Public Evaluation Set V2**  
 **Human Solution**: pour out the bag
 
-* Identification Step
-
 [**95 of 120**](https://arcprize.org/play?task=bf45cf4b) **Public Evaluation Set V2**  
 **Human Solution**: clone the template according to the symbol
-
-* Identification Step
 
 [**96 of 120**](https://arcprize.org/play?task=c4d067a0) **Public Evaluation Set V2**  
 **Human Solution**: extending a template according to symbols
 
-* Identification Step
-
 [**97 of 120**](https://arcprize.org/play?task=c7f57c3e) **Public Evaluation Set V2**  
 **Human Solution**: abstract templates (ignore size) or link pieces by color
-
-* Identification Step
 
 [**98 of 120**](https://arcprize.org/play?task=cb2d8a2c) **Public Evaluation Set V2**  
 **Human Solution**: decoding traffic signal
 
-* Identification Step
-
 [**99 of 120**](https://arcprize.org/play?task=cbebaa4b) **Public Evaluation Set V2**  
 **Human Solution**: linking puzzle
-
-* Identification Step
 
 [**100 of 120**](https://arcprize.org/play?task=d35bdbdc) **Public Evaluation Set V2**  
 **Human Solution**: only flower the end of the path
 
-* Identification Step
-
 [**101 of 120**](https://arcprize.org/play?task=d59b0160) **Public Evaluation Set V2**  
 **Human Solution**: filter sets by key
-
-* Identification Step
 
 [**102 of 120**](https://arcprize.org/play?task=d8e07eb2) **Public Evaluation Set V2**  
 **Human Solution**: areSymbolsInLine?
 
-* Identification Step
-
 [**103 of 120**](https://arcprize.org/play?task=da515329) **Public Evaluation Set V2**  
 **Human Solution**: I have no fucking clue
-
-* Identification Step
 
 [**104 of 120**](https://arcprize.org/play?task=db0c5428) **Public Evaluation Set V2**  
 **Human Solution**: inverse explosion
 
-* Identification Step
-
 [**105 of 120**](https://arcprize.org/play?task=db695cfb) **Public Evaluation Set V2**  
 **Human Solution**: crossing lines
-
-* Identification Step
 
 [**106 of 120**](https://arcprize.org/play?task=dbff022c) **Public Evaluation Set V2**  
 **Human Solution**: Solve the color swirl
 
-* Identification Step
-
 [**107 of 120**](https://arcprize.org/play?task=dd6b8c4b) **Public Evaluation Set V2**  
 **Human Solution**: prioritization
-
-* Identification Step
 
 [**108 of 120**](https://arcprize.org/play?task=de809cff) **Public Evaluation Set V2**  
 **Human Solution**: packet loss identification
 
-* Identification Step
-
 [**109 of 120**](https://arcprize.org/play?task=dfadab01) **Public Evaluation Set V2**  
 **Human Solution**: looks like the real test intent here is avoiding contamination from the output pieces that are in the input graph
-
-* Identification Step
 
 [**110 of 120**](https://arcprize.org/play?task=e12f9a14) **Public Evaluation Set V2**  
 **Human Solution**: colliding beams
 
-* Identification Step
-
 [**111 of 120**](https://arcprize.org/play?task=e3721c99) **Public Evaluation Set V2**  
 **Human Solution**: color by hole
-
-* Identification Step
 
 [**112 of 120**](https://arcprize.org/play?task=e376de54) **Public Evaluation Set V2**  
 **Human Solution**: average length
 
-* Identification Step
-
 [**113 of 120**](https://arcprize.org/play?task=e8686506) **Public Evaluation Set V2**  
 **Human Solution**: another combination puzzle
-
-* Identification Step
 
 [**114 of 120**](https://arcprize.org/play?task=e87109e9) **Public Evaluation Set V2**  
 **Human Solution**: symbols to directions
 
-* Identification Step
-
 [**115 of 120**](https://arcprize.org/play?task=edb79dae) **Public Evaluation Set V2**  
 **Human Solution**: shape & color from different symbols
-
-* Identification Step
 
 [**116 of 120**](https://arcprize.org/play?task=eee78d87) **Public Evaluation Set V2**  
 **Human Solution**: XOR combined with static output
 
-* Identification Step
-
 [**117 of 120**](https://arcprize.org/play?task=f560132c) **Public Evaluation Set V2**  
 **Human Solution**: another color swirl
-
-* Identification Step
 
 [**118 of 120**](https://arcprize.org/play?task=f931b4a8) **Public Evaluation Set V2**  
 **Human Solution**: grid size & symbols
 
-* Identification Step
-
 [**119 of 120**](https://arcprize.org/play?task=faa9f03d) **Public Evaluation Set V2**  
 **Human Solution**: fix the paths
 
-* Identification Step
-
 [**120 of 120**](https://arcprize.org/play?task=fc7cae8d) **Public Evaluation Set V2**  
 **Human Solution**: rotate or flip according to color
-
-* Identification Step
 
 **Non-exhaustive list of Pattern Manipulations:** (for convenient reference)  
 Great — you're asking about **math visual logic pattern manipulations** — which covers how **patterns are transformed** in mathematical, visual, or logical contexts. This includes **symmetry operations, geometric transformations, and logical modifications** that can be applied to sequences, shapes, or grids.
