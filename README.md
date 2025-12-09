@@ -59,6 +59,12 @@ Implement the abstracted solution process & test it on the remaining problems & 
 * **Significance Hypothesis**: squares can be grouped with adjacent & diagonally adjacent squares of the same color as a single “piece”  
   * At some point in a belief search, squares of the same color at greater distances from each other than immediate adjacency can be considered parts of the same piece
 
+**Current Unsolved Problems**
+There's at least three unsolved problems:
+* Puzzle categorization (preferably by a model that can admit ignorance rather than hallucinate. Hierarchical temporal memory might work best, but requires specific training) 
+* Hypothesis generation / search heuristic (Actually might have a solid draft that just needs to be fleshed out: breadth first with revisiting to dig deeper if solution not found at dynamic thresholds)
+* Hypothesis abstract syntax tree (at the very least, replacing prepositional clauses with symbols)
+
 **Puzzle Solutions:**  
 1 of 120 Public Evaluation Set V2 [https://arcprize.org/play?task=1ae2feb7](https://arcprize.org/play?task=1ae2feb7)
 
