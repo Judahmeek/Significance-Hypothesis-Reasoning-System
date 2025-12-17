@@ -65,8 +65,9 @@ There's at least three unsolved problems:
 * Hypothesis generation / search heuristic (Actually might have a solid draft that just needs to be fleshed out: breadth first with revisiting to dig deeper if solution not found at dynamic thresholds)
 * Hypothesis abstract syntax tree (at the very least, replacing prepositional clauses with symbols)
 
-**Puzzle Solutions:**  
-1 of 120 Public Evaluation Set V2 [https://arcprize.org/play?task=1ae2feb7](https://arcprize.org/play?task=1ae2feb7)
+**Puzzle Solutions:**
+
+[**1 of 120**](https://arcprize.org/play?task=1ae2feb7) **Public Evaluation Set V2 - 1ae2feb7** **Human Solution**: Figure out how the inputs for each line determine repeating pattern of outputs
 
 * Identify constant colors (Example 1: red & pink, Example 3: red), constants (the red vertical piece in Example 2), inputs (everything left of the constant), & outputs (all the new blocks)  
 * test relationships between everything (I mean everything, including the sizes of the example graphs) for significance (starting with the simplest relationships first)  
@@ -108,358 +109,358 @@ There's at least three unsolved problems:
 ---
 
 **Puzzles Awaiting Solution Specification:**
-[**2 of 120**](https://arcprize.org/play?task=3e6067c3) **Public Evaluation Set V2** **Human Solution**: Recognize that the outputs link the inputs in the order of the single inputs that are not wrapped in rings of constants
+[**2 of 120**](https://arcprize.org/play?task=3e6067c3) **Public Evaluation Set V2 - 3e6067c3** **Human Solution**: Recognize that the outputs link the inputs in the order of the single inputs that are not wrapped in rings of constants
 
-[**3 of 120**](https://arcprize.org/play?task=16b78196) **Public Evaluation Set V2** **Human Solution**: Recognize that inputs get “plugged” into constant to full rectangular “limbs”
+[**3 of 120**](https://arcprize.org/play?task=16b78196) **Public Evaluation Set V2 - 16b78196** **Human Solution**: Recognize that inputs get “plugged” into constant to full rectangular “limbs”
 
-[**4 of 120**](https://arcprize.org/play?task=142ca369) **Public Evaluation Set V2** **Human Solution**: I actually had trouble with this puzzle because if the beams grow one square at a time, the examples suggest the beams could deflect off each other and then collide (same block), which would lead to a scenario that isn’t addressed by any of the examples
+[**4 of 120**](https://arcprize.org/play?task=142ca369) **Public Evaluation Set V2 - 142ca369** **Human Solution**: I actually had trouble with this puzzle because if the beams grow one square at a time, the examples suggest the beams could deflect off each other and then collide (same block), which would lead to a scenario that isn’t addressed by any of the examples
 
-[**5 of 120**](https://arcprize.org/play?task=136b0064) **Public Evaluation Set V2**  
+[**5 of 120**](https://arcprize.org/play?task=136b0064) **Public Evaluation Set V2 - 136b0064**  
 **Human Solution**: it’s a map puzzle\!
 
-[**6 of 120**](https://arcprize.org/play?task=0934a4d8) **Public Evaluation Set V2**  
+[**6 of 120**](https://arcprize.org/play?task=0934a4d8) **Public Evaluation Set V2 - 0934a4d8**  
 **Human Solution**: The size of the output graph is highly relevant here
 
-[**7 of 120**](https://arcprize.org/play?task=135a2760) **Public Evaluation Set V2**  
+[**7 of 120**](https://arcprize.org/play?task=135a2760) **Public Evaluation Set V2 - 135a2760**  
 **Human Solution**: simple? Pattern recognition
 
-[**8 of 120**](https://arcprize.org/play?task=13e47133) **Public Evaluation Set V2**  
+[**8 of 120**](https://arcprize.org/play?task=13e47133) **Public Evaluation Set V2 - 13e47133**  
 **Human Solution**: Serious abstraction exercise
 
-[**9 of 120**](https://arcprize.org/play?task=1818057f) **Public Evaluation Set V2**  
+[**9 of 120**](https://arcprize.org/play?task=1818057f) **Public Evaluation Set V2 - 1818057f**  
 **Human Solution**: It's all about the plus symbol.
 
-[**10 of 120**](https://arcprize.org/play?task=195c6913) **Public Evaluation Set V2**  
+[**10 of 120**](https://arcprize.org/play?task=195c6913) **Public Evaluation Set V2 - 195c6913**  
 **Human Solution**: another symbolism map
 
-[**11 of 120**](https://arcprize.org/play?task=20270e3b) **Public Evaluation Set V2**  
+[**11 of 120**](https://arcprize.org/play?task=20270e3b) **Public Evaluation Set V2 - 20270e3b**  
 **Human Solution**: linkage puzzle
 
-[**12 of 120**](https://arcprize.org/play?task=20a9e565) **Public Evaluation Set V2**  
+[**12 of 120**](https://arcprize.org/play?task=20a9e565) **Public Evaluation Set V2 - 20a9e565**  
 **Human Solution**: output graph size matters again
 
-[**13 of 120**](https://arcprize.org/play?task=21897d95) **Public Evaluation Set V2**  
+[**13 of 120**](https://arcprize.org/play?task=21897d95) **Public Evaluation Set V2 - 21897d95**  
 **Human Solution**: input & output graphs have inverted sizes
 
-[**14 of 120**](https://arcprize.org/play?task=221dfab4) **Public Evaluation Set V2**  
+[**14 of 120**](https://arcprize.org/play?task=221dfab4) **Public Evaluation Set V2 - 221dfab4**  
 **Human Solution**: making a trail? Line pattern for sure.
 
-[**15 of 120**](https://arcprize.org/play?task=247ef758) **Public Evaluation Set V2**  
+[**15 of 120**](https://arcprize.org/play?task=247ef758) **Public Evaluation Set V2 - 247ef758**  
 **Human Solution**: Does it fit?\!
 
-[**16 of 120**](https://arcprize.org/play?task=269e22fb) **Public Evaluation Set V2**  
+[**16 of 120**](https://arcprize.org/play?task=269e22fb) **Public Evaluation Set V2 - 269e22fb**  
 **Human Solution**: This one is fucking crazy. Got to figure out that the output graph is always the same except for color & orientation, which means comparing examples\!
 
-[**17 of 120**](https://arcprize.org/play?task=271d71e2) **Public Evaluation Set V2**  
+[**17 of 120**](https://arcprize.org/play?task=271d71e2) **Public Evaluation Set V2 - 271d71e2**  
 **Human Solution**: Lots of complex relationships in this one
 
-[**18 of 120**](https://arcprize.org/play?task=28a6681f) **Public Evaluation Set V2**  
+[**18 of 120**](https://arcprize.org/play?task=28a6681f) **Public Evaluation Set V2 - 28a6681f**  
 **Human Solution**: A water/liquid based puzzle
 
-[**19 of 120**](https://arcprize.org/play?task=291dc1e1) **Public Evaluation Set V2**  
+[**19 of 120**](https://arcprize.org/play?task=291dc1e1) **Public Evaluation Set V2 - 291dc1e1**  
 **Human Solution**: graph sizes are relevant again
 
-[**20 of 120**](https://arcprize.org/play?task=2b83f449) **Public Evaluation Set V2**  
+[**20 of 120**](https://arcprize.org/play?task=2b83f449) **Public Evaluation Set V2 - 2b83f449**  
 **Human Solution**: This puzzle contains a chronological element. No idea how to code that\! 😂
 
-[**21 of 120**](https://arcprize.org/play?task=2ba387bc) **Public Evaluation Set V2**  
+[**21 of 120**](https://arcprize.org/play?task=2ba387bc) **Public Evaluation Set V2 - 2ba387bc**  
 **Human Solution**: Seems like a simple? ordering puzzle
 
-[**22 of 120**](https://arcprize.org/play?task=2c181942) **Public Evaluation Set V2**  
+[**22 of 120**](https://arcprize.org/play?task=2c181942) **Public Evaluation Set V2 - 2c181942**  
 **Human Solution**: Seems like a simple? linking puzzle
 
-[**23 of 120**](https://arcprize.org/play?task=2d0172a1) **Public Evaluation Set V2**  
+[**23 of 120**](https://arcprize.org/play?task=2d0172a1) **Public Evaluation Set V2 - 2d0172a1**  
 **Human Solution**: Approximate a square? Fuck me.
 
-[**24 of 120**](https://arcprize.org/play?task=31f7f899) **Public Evaluation Set V2**  
+[**24 of 120**](https://arcprize.org/play?task=31f7f899) **Public Evaluation Set V2 - 31f7f899**  
 **Human Solution**: stacking is simple. Ordering maybe less so.
 
-[**25 of 120**](https://arcprize.org/play?task=332f06d7) **Public Evaluation Set V2**  
+[**25 of 120**](https://arcprize.org/play?task=332f06d7) **Public Evaluation Set V2 - 332f06d7**  
 **Human Solution**: basic maze puzzle
 
-[**26 of 120**](https://arcprize.org/play?task=35ab12c3) **Public Evaluation Set V2**  
+[**26 of 120**](https://arcprize.org/play?task=35ab12c3) **Public Evaluation Set V2 - 35ab12c3**  
 **Human Solution**: basic symbolism puzzle
 
-[**27 of 120**](https://arcprize.org/play?task=36a08778) **Public Evaluation Set V2**  
+[**27 of 120**](https://arcprize.org/play?task=36a08778) **Public Evaluation Set V2 - 36a08778**  
 **Human Solution**: basic liquid puzzle
 
-[**28 of 120**](https://arcprize.org/play?task=38007db0) **Public Evaluation Set V2**  
+[**28 of 120**](https://arcprize.org/play?task=38007db0) **Public Evaluation Set V2 - 38007db0**  
 **Human Solution**: basic liquid puzzle
 
-[**29 of 120**](https://arcprize.org/play?task=3a25b0d8) **Public Evaluation Set V2**  
+[**29 of 120**](https://arcprize.org/play?task=3a25b0d8) **Public Evaluation Set V2 - 3a25b0d8**  
 **Human Solution**: color fill
 
-[**30 of 120**](https://arcprize.org/play?task=3dc255db) **Public Evaluation Set V2**  
+[**30 of 120**](https://arcprize.org/play?task=3dc255db) **Public Evaluation Set V2 - 3dc255db**  
 **Human Solution**: This puzzle is simple, but I don’t have a simple description for it
 
-[**31 of 120**](https://arcprize.org/play?task=409aa875) **Public Evaluation Set V2**  
+[**31 of 120**](https://arcprize.org/play?task=409aa875) **Public Evaluation Set V2 - 409aa875**  
 **Human Solution**: bullet collisions
 
-[**32 of 120**](https://arcprize.org/play?task=446ef5d2) **Public Evaluation Set V2**  
+[**32 of 120**](https://arcprize.org/play?task=446ef5d2) **Public Evaluation Set V2 - 446ef5d2**  
 **Human Solution**: the symbol that communicate outer corner will be interesting to figure out
 
-[**33 of 120**](https://arcprize.org/play?task=45a5af55) **Public Evaluation Set V2**  
+[**33 of 120**](https://arcprize.org/play?task=45a5af55) **Public Evaluation Set V2 - 45a5af55**  
 **Human Solution**: lines to square
 
-[**34 of 120**](https://arcprize.org/play?task=4a21e3da) **Public Evaluation Set V2**  
+[**34 of 120**](https://arcprize.org/play?task=4a21e3da) **Public Evaluation Set V2 - 4a21e3da**  
 **Human Solution**: shape dissection
 
-[**35 of 120**](https://arcprize.org/play?task=4c3d4a41) **Public Evaluation Set V2**  
+[**35 of 120**](https://arcprize.org/play?task=4c3d4a41) **Public Evaluation Set V2 - 4c3d4a41**  
 **Human Solution**: piece displacement
 
-[**36 of 120**](https://arcprize.org/play?task=4c416de3) **Public Evaluation Set V2**  
+[**36 of 120**](https://arcprize.org/play?task=4c416de3) **Public Evaluation Set V2 - 4c416de3**  
 **Human Solution**: find the odd thing out
 
-[**37 of 120**](https://arcprize.org/play?task=4c7dc4dd) **Public Evaluation Set V2**  
+[**37 of 120**](https://arcprize.org/play?task=4c7dc4dd) **Public Evaluation Set V2 - 4c7dc4dd**  
 **Human Solution**: Puzzle \#1 looks to be filtering out the noise
 
-[**38 of 120**](https://arcprize.org/play?task=4e34c42c) **Public Evaluation Set V2**  
+[**38 of 120**](https://arcprize.org/play?task=4e34c42c) **Public Evaluation Set V2 - 4e34c42c**  
 **Human Solution**: another linking puzzle
 
-[**39 of 120**](https://arcprize.org/play?task=53fb4810) **Public Evaluation Set V2**  
+[**39 of 120**](https://arcprize.org/play?task=53fb4810) **Public Evaluation Set V2 - 53fb4810**  
 **Human Solution**: Beam cannons\!\!\!
 
-[**40 of 120**](https://arcprize.org/play?task=5545f144) **Public Evaluation Set V2**  
+[**40 of 120**](https://arcprize.org/play?task=5545f144) **Public Evaluation Set V2 - 5545f144**  
 **Human Solution**: Here, fishy, fishy, fishy
 
-[**41 of 120**](https://arcprize.org/play?task=581f7754) **Public Evaluation Set V2**  
+[**41 of 120**](https://arcprize.org/play?task=581f7754) **Public Evaluation Set V2 - 581f7754**  
 **Human Solution**: center line
 
-[**42 of 120**](https://arcprize.org/play?task=58490d8a) **Public Evaluation Set V2**  
+[**42 of 120**](https://arcprize.org/play?task=58490d8a) **Public Evaluation Set V2 - 58490d8a**  
 **Human Solution**: combining symbols
 
-[**43 of 120**](https://arcprize.org/play?task=58f5dbd5) **Public Evaluation Set V2**  
+[**43 of 120**](https://arcprize.org/play?task=58f5dbd5) **Public Evaluation Set V2 - 58f5dbd5**  
 **Human Solution**: combining symbols
 
-[**44 of 120**](https://arcprize.org/play?task=5961cc34) **Public Evaluation Set V2**  
+[**44 of 120**](https://arcprize.org/play?task=5961cc34) **Public Evaluation Set V2 - 5961cc34**  
 **Human Solution**: a two-step process
 
-[**45 of 120**](https://arcprize.org/play?task=5dbc8537) **Public Evaluation Set V2**  
+[**45 of 120**](https://arcprize.org/play?task=5dbc8537) **Public Evaluation Set V2 - 5dbc8537**  
 **Human Solution**: applying colors
 
-[**46 of 120**](https://arcprize.org/play?task=62593bfd) **Public Evaluation Set V2**  
+[**46 of 120**](https://arcprize.org/play?task=62593bfd) **Public Evaluation Set V2 - 62593bfd**  
 **Human Solution**: something about gravity
 
-[**47 of 120**](https://arcprize.org/play?task=64efde09) **Public Evaluation Set V2**  
+[**47 of 120**](https://arcprize.org/play?task=64efde09) **Public Evaluation Set V2 - 64efde09**  
 **Human Solution**: combining applied knowledge
 
-[**48 of 120**](https://arcprize.org/play?task=65b59efc) **Public Evaluation Set V2**  
+[**48 of 120**](https://arcprize.org/play?task=65b59efc) **Public Evaluation Set V2 - 65b59efc**  
 **Human Solution**: tik tak toe
 
-[**49 of 120**](https://arcprize.org/play?task=67e490f4) **Public Evaluation Set V2**  
+[**49 of 120**](https://arcprize.org/play?task=67e490f4) **Public Evaluation Set V2 - 67e490f4**  
 **Human Solution**: pick the right one & insert it
 
-[**50 of 120**](https://arcprize.org/play?task=6e453dd6) **Public Evaluation Set V2**  
+[**50 of 120**](https://arcprize.org/play?task=6e453dd6) **Public Evaluation Set V2 - 6e453dd6**  
 **Human Solution**: I love the color scheme for this puzzle
 
-[**51 of 120**](https://arcprize.org/play?task=6e4f6532) **Public Evaluation Set V2**  
+[**51 of 120**](https://arcprize.org/play?task=6e4f6532) **Public Evaluation Set V2 - 6e4f6532**  
 **Human Solution**: definitely can expect changing colors between tests & examples
 
-[**52 of 120**](https://arcprize.org/play?task=6ffbe589) **Public Evaluation Set V2**  
+[**52 of 120**](https://arcprize.org/play?task=6ffbe589) **Public Evaluation Set V2 - 6ffbe589**  
 **Human Solution**: This puzzle is unintuitive for me
 
-[**53 of 120**](https://arcprize.org/play?task=71e489b6) **Public Evaluation Set V2**  
+[**53 of 120**](https://arcprize.org/play?task=71e489b6) **Public Evaluation Set V2 - 71e489b6**  
 **Human Solution**: Identify packet loss
 
-[**54 of 120**](https://arcprize.org/play?task=7491f3cf) **Public Evaluation Set V2**  
+[**54 of 120**](https://arcprize.org/play?task=7491f3cf) **Public Evaluation Set V2 - 7491f3cf**  
 **Human Solution**: pattern fusion\!
 
-[**55 of 120**](https://arcprize.org/play?task=7666fa5d) **Public Evaluation Set V2**  
+[**55 of 120**](https://arcprize.org/play?task=7666fa5d) **Public Evaluation Set V2 - 7666fa5d**  
 **Human Solution**: fill in between the lines
 
-[**56 of 120**](https://arcprize.org/play?task=78332cb0) **Public Evaluation Set V2**  
+[**56 of 120**](https://arcprize.org/play?task=78332cb0) **Public Evaluation Set V2 - 78332cb0**  
 **Human Solution**: linking path
 
-[**57 of 120**](https://arcprize.org/play?task=7b0280bc) **Public Evaluation Set V2**  
+[**57 of 120**](https://arcprize.org/play?task=7b0280bc) **Public Evaluation Set V2 - 7b0280bc**  
 **Human Solution**: pathfinding puzzle
 
-[**58 of 120**](https://arcprize.org/play?task=7b3084d4) **Public Evaluation Set V2**  
+[**58 of 120**](https://arcprize.org/play?task=7b3084d4) **Public Evaluation Set V2 - 7b3084d4**  
 **Human Solution**: Go Go, Power Rangers\!
 
-[**59 of 120**](https://arcprize.org/play?task=7b5033c1) **Public Evaluation Set V2**  
+[**59 of 120**](https://arcprize.org/play?task=7b5033c1) **Public Evaluation Set V2 - 7b5033c1**  
 **Human Solution**: What. The. Fuck.
 
-[**60 of 120**](https://arcprize.org/play?task=7b80bb43) **Public Evaluation Set V2**  
+[**60 of 120**](https://arcprize.org/play?task=7b80bb43) **Public Evaluation Set V2 - 7b80bb43**  
 **Human Solution**: fix the broken path
 
-[**61 of 120**](https://arcprize.org/play?task=7c66cb00) **Public Evaluation Set V2**  
+[**61 of 120**](https://arcprize.org/play?task=7c66cb00) **Public Evaluation Set V2 - 7c66cb00**  
 **Human Solution**: breakdown & shelve the parts
 
-[**62 of 120**](https://arcprize.org/play?task=7ed72f31) **Public Evaluation Set V2**  
+[**62 of 120**](https://arcprize.org/play?task=7ed72f31) **Public Evaluation Set V2 - 7ed72f31**  
 **Human Solution**: regenerate missing half
 
-[**63 of 120**](https://arcprize.org/play?task=800d221b) **Public Evaluation Set V2**  
+[**63 of 120**](https://arcprize.org/play?task=800d221b) **Public Evaluation Set V2 - 800d221b**  
 **Human Solution**: ant nest puzzle
 
-[**64 of 120**](https://arcprize.org/play?task=80a900e0) **Public Evaluation Set V2**  
+[**64 of 120**](https://arcprize.org/play?task=80a900e0) **Public Evaluation Set V2 - 80a900e0**  
 **Human Solution**: pull signal from noise
 
-[**65 of 120**](https://arcprize.org/play?task=8698868d) **Public Evaluation Set V2**  
+[**65 of 120**](https://arcprize.org/play?task=8698868d) **Public Evaluation Set V2 - 8698868d**  
 **Human Solution**: holey, holey, holey
 
-[**66 of 120**](https://arcprize.org/play?task=88bcf3b4) **Public Evaluation Set V2**  
+[**66 of 120**](https://arcprize.org/play?task=88bcf3b4) **Public Evaluation Set V2 - 88bcf3b4**  
 **Human Solution**: whip slap
 
-[**67 of 120**](https://arcprize.org/play?task=88e364bc) **Public Evaluation Set V2**  
+[**67 of 120**](https://arcprize.org/play?task=88e364bc) **Public Evaluation Set V2 - 88e364bc**  
 **Human Solution**: levers & switches
 
-[**68 of 120**](https://arcprize.org/play?task=89565ca0) **Public Evaluation Set V2**  
+[**68 of 120**](https://arcprize.org/play?task=89565ca0) **Public Evaluation Set V2 - 89565ca0**  
 **Human Solution**: one hell of a simplication
 
-[**69 of 120**](https://arcprize.org/play?task=898e7135) **Public Evaluation Set V2**  
+[**69 of 120**](https://arcprize.org/play?task=898e7135) **Public Evaluation Set V2 - 898e7135**  
 **Human Solution**: combine parts, ignore rest
 
-[**70 of 120**](https://arcprize.org/play?task=8b7bacbf) **Public Evaluation Set V2**  
+[**70 of 120**](https://arcprize.org/play?task=8b7bacbf) **Public Evaluation Set V2 - 8b7bacbf**  
 **Human Solution**: flower the path
 
-[**71 of 120**](https://arcprize.org/play?task=8b9c3697) **Public Evaluation Set V2**  
+[**71 of 120**](https://arcprize.org/play?task=8b9c3697) **Public Evaluation Set V2 - 8b9c3697**  
 **Human Solution**: attach engines?
 
-[**72 of 120**](https://arcprize.org/play?task=8e5c0c38) **Public Evaluation Set V2**  
+[**72 of 120**](https://arcprize.org/play?task=8e5c0c38) **Public Evaluation Set V2 - 8e5c0c38**  
 **Human Solution**: remove asymmetries
 
-[**73 of 120**](https://arcprize.org/play?task=8f215267) **Public Evaluation Set V2**  
+[**73 of 120**](https://arcprize.org/play?task=8f215267) **Public Evaluation Set V2 - 8f215267**  
 **Human Solution**: count the small pieces
 
-[**74 of 120**](https://arcprize.org/play?task=8f3a5a89) **Public Evaluation Set V2**  
+[**74 of 120**](https://arcprize.org/play?task=8f3a5a89) **Public Evaluation Set V2 - 8f3a5a89**  
 **Human Solution**: draw the border
 
-[**75 of 120**](https://arcprize.org/play?task=9385bd28) **Public Evaluation Set V2**  
+[**75 of 120**](https://arcprize.org/play?task=9385bd28) **Public Evaluation Set V2 - 9385bd28**  
 **Human Solution**: with our powers combined\!
 
-[**76 of 120**](https://arcprize.org/play?task=97d7923e) **Public Evaluation Set V2**  
+[**76 of 120**](https://arcprize.org/play?task=97d7923e) **Public Evaluation Set V2 - 97d7923e**  
 **Human Solution**: pick sticks by length
 
-[**77 of 120**](https://arcprize.org/play?task=981571dc) **Public Evaluation Set V2**  
+[**77 of 120**](https://arcprize.org/play?task=981571dc) **Public Evaluation Set V2 - 981571dc**  
 **Human Solution**: no idea, but sure is colorful
 
-[**78 of 120**](https://arcprize.org/play?task=9aaea919) **Public Evaluation Set V2**  
+[**78 of 120**](https://arcprize.org/play?task=9aaea919) **Public Evaluation Set V2 - 9aaea919**  
 **Human Solution**: stacking pots?
 
-[**79 of 120**](https://arcprize.org/play?task=9bbf930d) **Public Evaluation Set V2**  
+[**79 of 120**](https://arcprize.org/play?task=9bbf930d) **Public Evaluation Set V2 - 9bbf930d**  
 **Human Solution**: two lines \= path
 
-[**80 of 120**](https://arcprize.org/play?task=a251c730) **Public Evaluation Set V2**  
+[**80 of 120**](https://arcprize.org/play?task=a251c730) **Public Evaluation Set V2 - a251c730**  
 **Human Solution**: why the fields of flowers?
 
-[**81 of 120**](https://arcprize.org/play?task=a25697e4) **Public Evaluation Set V2**  
+[**81 of 120**](https://arcprize.org/play?task=a25697e4) **Public Evaluation Set V2 - a25697e4**  
 **Human Solution**: sticking the right end in the hole
 
-[**82 of 120**](https://arcprize.org/play?task=a32d8b75) **Public Evaluation Set V2**  
+[**82 of 120**](https://arcprize.org/play?task=a32d8b75) **Public Evaluation Set V2 - a32d8b75**  
 **Human Solution**: combining four different symbols
 
-[**83 of 120**](https://arcprize.org/play?task=a395ee82) **Public Evaluation Set V2**  
+[**83 of 120**](https://arcprize.org/play?task=a395ee82) **Public Evaluation Set V2 - a395ee82**  
 **Human Solution**: clone a template
 
-[**84 of 120**](https://arcprize.org/play?task=a47bf94d) **Public Evaluation Set V2**  
+[**84 of 120**](https://arcprize.org/play?task=a47bf94d) **Public Evaluation Set V2 - a47bf94d**  
 **Human Solution**: separating interlocked, same value pieces
 
-[**85 of 120**](https://arcprize.org/play?task=a6f40cea) **Public Evaluation Set V2**  
+[**85 of 120**](https://arcprize.org/play?task=a6f40cea) **Public Evaluation Set V2 - a6f40cea**  
 **Human Solution**: predict what is hidden
 
-[**86 of 120**](https://arcprize.org/play?task=aa4ec2a5) **Public Evaluation Set V2**  
+[**86 of 120**](https://arcprize.org/play?task=aa4ec2a5) **Public Evaluation Set V2 - aa4ec2a5**  
 **Human Solution**: make a face\!
 
-[**87 of 120**](https://arcprize.org/play?task=abc82100) **Public Evaluation Set V2**  
+[**87 of 120**](https://arcprize.org/play?task=abc82100) **Public Evaluation Set V2 - abc82100**  
 **Human Solution**: seems simple enough
 
-[**88 of 120**](https://arcprize.org/play?task=b0039139) **Public Evaluation Set V2**  
+[**88 of 120**](https://arcprize.org/play?task=b0039139) **Public Evaluation Set V2 - b0039139**  
 **Human Solution**: What. The. Fuck.
 
-[**89 of 120**](https://arcprize.org/play?task=b10624e5) **Public Evaluation Set V2**  
+[**89 of 120**](https://arcprize.org/play?task=b10624e5) **Public Evaluation Set V2 - b10624e5**  
 **Human Solution**: generalize features
 
-[**90 of 120**](https://arcprize.org/play?task=b5ca7ac4) **Public Evaluation Set V2**  
+[**90 of 120**](https://arcprize.org/play?task=b5ca7ac4) **Public Evaluation Set V2 - b5ca7ac4**  
 **Human Solution**: separate by category
 
-[**91 of 120**](https://arcprize.org/play?task=b6f77b65) **Public Evaluation Set V2**  
+[**91 of 120**](https://arcprize.org/play?task=b6f77b65) **Public Evaluation Set V2 - b6f77b65**  
 **Human Solution**: removing colors
 
-[**92 of 120**](https://arcprize.org/play?task=16de56c4) **Public Evaluation Set V2**  
+[**92 of 120**](https://arcprize.org/play?task=16de56c4) **Public Evaluation Set V2 - 16de56c4**  
 **Human Solution**: basic line patterns
 
-[**93 of 120**](https://arcprize.org/play?task=b99e7126) **Public Evaluation Set V2**  
+[**93 of 120**](https://arcprize.org/play?task=b99e7126) **Public Evaluation Set V2 - b99e7126**  
 **Human Solution**: blanket pattern?
 
-[**94 of 120**](https://arcprize.org/play?task=b9e38dc0) **Public Evaluation Set V2**  
+[**94 of 120**](https://arcprize.org/play?task=b9e38dc0) **Public Evaluation Set V2 - b9e38dc0**  
 **Human Solution**: pour out the bag
 
-[**95 of 120**](https://arcprize.org/play?task=bf45cf4b) **Public Evaluation Set V2**  
+[**95 of 120**](https://arcprize.org/play?task=bf45cf4b) **Public Evaluation Set V2 - bf45cf4b**  
 **Human Solution**: clone the template according to the symbol
 
-[**96 of 120**](https://arcprize.org/play?task=c4d067a0) **Public Evaluation Set V2**  
+[**96 of 120**](https://arcprize.org/play?task=c4d067a0) **Public Evaluation Set V2 - c4d067a0**  
 **Human Solution**: extending a template according to symbols
 
-[**97 of 120**](https://arcprize.org/play?task=c7f57c3e) **Public Evaluation Set V2**  
+[**97 of 120**](https://arcprize.org/play?task=c7f57c3e) **Public Evaluation Set V2 - c7f57c3e**  
 **Human Solution**: abstract templates (ignore size) or link pieces by color
 
-[**98 of 120**](https://arcprize.org/play?task=cb2d8a2c) **Public Evaluation Set V2**  
+[**98 of 120**](https://arcprize.org/play?task=cb2d8a2c) **Public Evaluation Set V2 - cb2d8a2c**  
 **Human Solution**: decoding traffic signal
 
-[**99 of 120**](https://arcprize.org/play?task=cbebaa4b) **Public Evaluation Set V2**  
+[**99 of 120**](https://arcprize.org/play?task=cbebaa4b) **Public Evaluation Set V2 - cbebaa4b**  
 **Human Solution**: linking puzzle
 
-[**100 of 120**](https://arcprize.org/play?task=d35bdbdc) **Public Evaluation Set V2**  
+[**100 of 120**](https://arcprize.org/play?task=d35bdbdc) **Public Evaluation Set V2 - d35bdbdc**  
 **Human Solution**: only flower the end of the path
 
-[**101 of 120**](https://arcprize.org/play?task=d59b0160) **Public Evaluation Set V2**  
+[**101 of 120**](https://arcprize.org/play?task=d59b0160) **Public Evaluation Set V2 - d59b0160**  
 **Human Solution**: filter sets by key
 
-[**102 of 120**](https://arcprize.org/play?task=d8e07eb2) **Public Evaluation Set V2**  
+[**102 of 120**](https://arcprize.org/play?task=d8e07eb2) **Public Evaluation Set V2 - d8e07eb2**  
 **Human Solution**: areSymbolsInLine?
 
-[**103 of 120**](https://arcprize.org/play?task=da515329) **Public Evaluation Set V2**  
+[**103 of 120**](https://arcprize.org/play?task=da515329) **Public Evaluation Set V2 - da515329**  
 **Human Solution**: I have no fucking clue
 
-[**104 of 120**](https://arcprize.org/play?task=db0c5428) **Public Evaluation Set V2**  
+[**104 of 120**](https://arcprize.org/play?task=db0c5428) **Public Evaluation Set V2 - db0c5428**  
 **Human Solution**: inverse explosion
 
-[**105 of 120**](https://arcprize.org/play?task=db695cfb) **Public Evaluation Set V2**  
+[**105 of 120**](https://arcprize.org/play?task=db695cfb) **Public Evaluation Set V2 - db695cfb**  
 **Human Solution**: crossing lines
 
-[**106 of 120**](https://arcprize.org/play?task=dbff022c) **Public Evaluation Set V2**  
+[**106 of 120**](https://arcprize.org/play?task=dbff022c) **Public Evaluation Set V2 - dbff022c**  
 **Human Solution**: Solve the color swirl
 
-[**107 of 120**](https://arcprize.org/play?task=dd6b8c4b) **Public Evaluation Set V2**  
+[**107 of 120**](https://arcprize.org/play?task=dd6b8c4b) **Public Evaluation Set V2 - dd6b8c4b**  
 **Human Solution**: prioritization
 
-[**108 of 120**](https://arcprize.org/play?task=de809cff) **Public Evaluation Set V2**  
+[**108 of 120**](https://arcprize.org/play?task=de809cff) **Public Evaluation Set V2 - de809cff**  
 **Human Solution**: packet loss identification
 
-[**109 of 120**](https://arcprize.org/play?task=dfadab01) **Public Evaluation Set V2**  
+[**109 of 120**](https://arcprize.org/play?task=dfadab01) **Public Evaluation Set V2 - dfadab01**  
 **Human Solution**: looks like the real test intent here is avoiding contamination from the output pieces that are in the input graph
 
-[**110 of 120**](https://arcprize.org/play?task=e12f9a14) **Public Evaluation Set V2**  
+[**110 of 120**](https://arcprize.org/play?task=e12f9a14) **Public Evaluation Set V2 - e12f9a14**  
 **Human Solution**: colliding beams
 
-[**111 of 120**](https://arcprize.org/play?task=e3721c99) **Public Evaluation Set V2**  
+[**111 of 120**](https://arcprize.org/play?task=e3721c99) **Public Evaluation Set V2 - e3721c99**  
 **Human Solution**: color by hole
 
-[**112 of 120**](https://arcprize.org/play?task=e376de54) **Public Evaluation Set V2**  
+[**112 of 120**](https://arcprize.org/play?task=e376de54) **Public Evaluation Set V2 - e376de54**  
 **Human Solution**: average length
 
-[**113 of 120**](https://arcprize.org/play?task=e8686506) **Public Evaluation Set V2**  
+[**113 of 120**](https://arcprize.org/play?task=e8686506) **Public Evaluation Set V2 - e8686506**  
 **Human Solution**: another combination puzzle
 
-[**114 of 120**](https://arcprize.org/play?task=e87109e9) **Public Evaluation Set V2**  
+[**114 of 120**](https://arcprize.org/play?task=e87109e9) **Public Evaluation Set V2 - e87109e9**  
 **Human Solution**: symbols to directions
 
-[**115 of 120**](https://arcprize.org/play?task=edb79dae) **Public Evaluation Set V2**  
+[**115 of 120**](https://arcprize.org/play?task=edb79dae) **Public Evaluation Set V2 - edb79dae**  
 **Human Solution**: shape & color from different symbols
 
-[**116 of 120**](https://arcprize.org/play?task=eee78d87) **Public Evaluation Set V2**  
+[**116 of 120**](https://arcprize.org/play?task=eee78d87) **Public Evaluation Set V2 - eee78d87**  
 **Human Solution**: XOR combined with static output
 
-[**117 of 120**](https://arcprize.org/play?task=f560132c) **Public Evaluation Set V2**  
+[**117 of 120**](https://arcprize.org/play?task=f560132c) **Public Evaluation Set V2 - f560132c**  
 **Human Solution**: another color swirl
 
-[**118 of 120**](https://arcprize.org/play?task=f931b4a8) **Public Evaluation Set V2**  
+[**118 of 120**](https://arcprize.org/play?task=f931b4a8) **Public Evaluation Set V2 - f931b4a8**  
 **Human Solution**: grid size & symbols
 
-[**119 of 120**](https://arcprize.org/play?task=faa9f03d) **Public Evaluation Set V2**  
+[**119 of 120**](https://arcprize.org/play?task=faa9f03d) **Public Evaluation Set V2 - faa9f03d**  
 **Human Solution**: fix the paths
 
-[**120 of 120**](https://arcprize.org/play?task=fc7cae8d) **Public Evaluation Set V2**  
+[**120 of 120**](https://arcprize.org/play?task=fc7cae8d) **Public Evaluation Set V2 - fc7cae8d**  
 **Human Solution**: rotate or flip according to color
 
 **Non-exhaustive list of Pattern Manipulations:** (for convenient reference)  
