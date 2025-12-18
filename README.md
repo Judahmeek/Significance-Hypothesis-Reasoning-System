@@ -113,6 +113,10 @@ There's at least three unsolved problems:
 
 #### Unsolved ARC-AGI-2 Public Eval Puzzles
 
+[**35 of 400 Public Evaluation Set V1 - 16b78196**](https://arcprize.org/play?task=16b78196)
+[**3 of 120 Public Evaluation Set V2 - 16b78196**](https://arcprize.org/play?task=16b78196)
+* **Human Solution**: Recognize that inputs get “plugged” into constant to fill rectangular “limbs”
+
 [**8 of 120 Public Evaluation Set V2 - 13e47133**](https://arcprize.org/play?task=13e47133)
 * **Human Solution**: Serious abstraction exercise
 
@@ -202,9 +206,6 @@ There's at least three unsolved problems:
 
 #### Unsolved ARC-AGI-1 Public Eval Puzzles
 
-[**35 of 400 Public Evaluation Set V1 - 16b78196**](https://arcprize.org/play?task=16b78196)
-* **Human Solution**: unsolved in v1 eval set; solved in v2 eval set 😂
-
 [**58 of 400 Public Evaluation Set V1 - 212895b5**](https://arcprize.org/play?task=212895b5)
 * **Human Solution**: Energy Beams & Lightning
 
@@ -233,9 +234,6 @@ There's at least three unsolved problems:
 
 [**2 of 120 Public Evaluation Set V2 - 3e6067c3**](https://arcprize.org/play?task=3e6067c3)
 * **Human Solution**: Recognize that the outputs link the inputs in the order of the single inputs that are not wrapped in rings of constants (symbol key)
-
-[**3 of 120 Public Evaluation Set V2 - 16b78196**](https://arcprize.org/play?task=16b78196)
-* **Human Solution**: Recognize that inputs get “plugged” into constant to fill rectangular “limbs”
 
 [**4 of 120 Public Evaluation Set V2 - 142ca369**](https://arcprize.org/play?task=142ca369)
 * **Human Solution**: I actually had trouble with this puzzle because if the beams grow one square at a time, the examples suggest the beams could deflect off each other and then collide (same block), which would lead to a scenario that isn’t addressed by any of the examples
