@@ -1,10 +1,10 @@
-# Significance-Hypothesis-Based-ARC-AGI-2-puzzle-solver
+# Significance Hypothesis Based Reasoning System (Proving concept by solving ARC-AGI-2 puzzles)
 #### Desperately seeking feedback and contributors!!! I'm smart, but I'm not Einstein
 
-This is a Draft Specification for a proof of concept for specifying how humans solve problem, restricted at the moment to ARC-AGI-2 puzzles. Implementation to begin probably today (First, I want to check the ARC-AGI Discord for solutions to the few puzzles that I couldn't solve, and then I'm considering running through the Solution Specification process for another puzzle before beginning implementation.) 
+This is a Draft Specification for a proof of concept for specifying how humans solve problem, restricted at the moment to ARC-AGI-2 puzzles. Implementation to begin soon™. I've got a couple projects that require less runway. Also, I'd like to have potential solutions to [all the major problems that I've identified](#current-unsolved-problems) (current progress: 2/3)
 
 **Collaboration Platforms:**
-**Slack:** Join me on [a dedicated Slack workspace](https://join.slack.com/t/shbarcagi2puz-int9037/shared_invite/zt-3k0qx6oly-SvinliPi8bjFCNjbP1AcJQ) to discuss this project  
+**Discord:** Join me on [a dedicated Discord server](https://discord.gg/M3KC7c3Q) to discuss this project.
 **Github:** Join me on [Github](https://github.com/Judahmeek/Significance-Hypothesis-Based-ARC-AGI-2-puzzle-solver) to actually begin the process of implementing the puzzle solver and test suite.  
 **Google Docs:** If you would like to just quickly view the Specification Document and send me some suggestions, you can do so through [Our Google Document](https://docs.google.com/document/d/1wYJyRsPdqNkTecePCfWnnby70mRbmoS4XpySJp_BhC0/edit?usp=sharing).
 
@@ -59,11 +59,14 @@ Implement the abstracted solution process & test it on the remaining problems & 
 * **Significance Hypothesis**: squares can be grouped with adjacent & diagonally adjacent squares of the same color as a single “piece”  
   * At some point in a belief search, squares of the same color at greater distances from each other than immediate adjacency can be considered parts of the same piece
 
-**Current Unsolved Problems**
-There's at least three unsolved problems:
-* Puzzle categorization (preferably by a model that can admit ignorance rather than hallucinate. Hierarchical temporal memory might work best, but requires specific training) 
-* Hypothesis generation / search heuristic (Actually might have a solid draft that just needs to be fleshed out: breadth first with revisiting to dig deeper if solution not found at dynamic thresholds)
-* Hypothesis abstract syntax tree (at the very least, replacing prepositional clauses with symbols)
+#### **Current Unsolved Problems**
+There's at least three serious problems that require solving:
+* **Puzzle categorization** (preferably by a model that can admit ignorance rather than hallucinate. Hierarchical temporal memory might work best, but requires specific training)
+  * **Possible Solution:** [Monthy of the Thousand Brains project](https://www.youtube.com/playlist?list=PLXpTU6oIscrkM2ZYSohq04cudo1cGGKTb)
+* **Hypothesis generation / search heuristic** (Actually might have a solid draft that just needs to be fleshed out: breadth first with revisiting to dig deeper if solution not found at dynamic thresholds)
+  * **Possible Solution:** Still looking for potential solutions here
+* **Hypothesis abstract syntax tree** (at the very least, replacing prepositional clauses with symbols)
+  * **Possible Solution:** [Dolphin neurosymbolic reasoning framework](https://dolphin-nesy.github.io/)
 
 **Puzzle Solutions:**
 
