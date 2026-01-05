@@ -116,6 +116,9 @@ There's at least three serious problems that require solving:
 ---
 
 ### Puzzles Awaiting Solution Specification:
+
+For more details on the solution to any puzzle, check https://human-arc.gptpluspro.com/
+
 #### Unsolved ARC-AGI-2 Public Eval Puzzles
 [**35 of 400 Public Evaluation Set V1 - 16b78196**](https://arcprize.org/play?task=16b78196)
 [**3 of 120 Public Evaluation Set V2 - 16b78196**](https://arcprize.org/play?task=16b78196)
@@ -161,7 +164,7 @@ There's at least three serious problems that require solving:
 * **Human Solution:** something about gravity
 
 [**52 of 120 Public Evaluation Set V2 - 6ffbe589**](https://arcprize.org/play?task=6ffbe589)
-* **Human Solution:** This puzzle is unintuitive for me
+* **Human Solution:** each block in the legend causes a 90 degree clockwise rotation for blocks of that color
 
 [**56 of 120 Public Evaluation Set V2 - 78332cb0**](https://arcprize.org/play?task=78332cb0)
 * **Human Solution:** linking path
@@ -216,7 +219,7 @@ There's at least three serious problems that require solving:
 * **Human Solution:** either a two step check rows & columns for same shape, or a one step check rows, columns, & diagonals
 
 [**125 of 400 Public Evaluation Set V1 - 50f325b5**](https://arcprize.org/play?task=50f325b5)
-* **Human Solution:** shapes of a specific color spread wherenver they fit
+* **Human Solution:** shapes of a specific color spread whenever they fit
 
 [**192 of 400 Public Evaluation Set V1 - 7d419a02**](https://arcprize.org/play?task=7d419a02)
 * **Human Solution:** Block casts a shadow on other columns
@@ -356,7 +359,7 @@ There's at least three serious problems that require solving:
 * **Human Solution:** Go Go, Power Rangers\!
 
 [**59 of 120 Public Evaluation Set V2 - 7b5033c1**](https://arcprize.org/play?task=7b5033c1)
-* **Human Solution:** What. The. Fuck.
+* **Human Solution:** Focus on the straightened worm
 
 [**61 of 120 Public Evaluation Set V2 - 7c66cb00**](https://arcprize.org/play?task=7c66cb00)
 * **Human Solution:** breakdown & shelve the parts
@@ -398,7 +401,7 @@ There's at least three serious problems that require solving:
 * **Human Solution:** pick sticks by length
 
 [**77 of 120 Public Evaluation Set V2 - 981571dc**](https://arcprize.org/play?task=981571dc)
-* **Human Solution:** no idea, but sure is colorful
+* **Human Solution:** fill in the missing blocks through symmetry
 
 [**78 of 120 Public Evaluation Set V2 - 9aaea919**](https://arcprize.org/play?task=9aaea919)
 * **Human Solution:** stacking pots?
@@ -422,10 +425,10 @@ There's at least three serious problems that require solving:
 * **Human Solution:** make a face\!
 
 [**87 of 120 Public Evaluation Set V2 - abc82100**](https://arcprize.org/play?task=abc82100)
-* **Human Solution:** seems simple enough
+* **Human Solution:** encoded templates
 
 [**88 of 120 Public Evaluation Set V2 - b0039139**](https://arcprize.org/play?task=b0039139)
-* **Human Solution:** What. The. Fuck.
+* **Human Solution:** Template, quantity, template color, background color
 
 [**89 of 120 Public Evaluation Set V2 - b10624e5**](https://arcprize.org/play?task=b10624e5)
 * **Human Solution:** generalize features
@@ -464,7 +467,7 @@ There's at least three serious problems that require solving:
 * **Human Solution:** areSymbolsInLine?
 
 [**103 of 120 Public Evaluation Set V2 - da515329**](https://arcprize.org/play?task=da515329)
-* **Human Solution:** I have no fucking clue
+* **Human Solution:** the cross bends back until it reaches one block from another source branch. Requires growing cross beyond grid boundaries & then cropping. Reverse rotation a possible solution, but never shown in examples.
 
 [**104 of 120 Public Evaluation Set V2 - db0c5428**](https://arcprize.org/play?task=db0c5428)
 * **Human Solution:** inverse explosion
