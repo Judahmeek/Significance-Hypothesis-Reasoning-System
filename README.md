@@ -70,7 +70,8 @@ There's at least three serious problems that require solving:
 * **Hypothesis generation / search heuristic** (Actually might have a solid draft that just needs to be fleshed out: breadth first with revisiting to dig deeper if solution not found at dynamic thresholds)
   * **Possible Solution:** Still looking for potential solutions here
 * **Hypothesis abstract syntax tree** (at the very least, replacing prepositional clauses with symbols)
-  * **Possible Solution:** [Dolphin neurosymbolic reasoning framework](https://dolphin-nesy.github.io/)
+  * **Possible Solution:** [OpenCyc's Cycl](https://github.com/Judahmeek/opencyc)
+* **Hypothesis abstraction:** The implementation of this will depend on the chosen rule syntax & general implementation details, but will involve the detection & removal of experimental constraints from hypotheses
 
 #### **Puzzle Solutions:**
 [**1 of 120 Public Evaluation Set V2 - 1ae2feb7**](https://arcprize.org/play?task=1ae2feb7)
