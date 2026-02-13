@@ -9,7 +9,10 @@ This is a Draft Specification for a proof of concept for specifying how humans s
 **Google Docs:** If you would like to just quickly view the Specification Document and send me some suggestions, you can do so through [Our Google Document](https://docs.google.com/document/d/1wYJyRsPdqNkTecePCfWnnby70mRbmoS4XpySJp_BhC0/edit?usp=sharing).
 
 #### **Problem Domain:** 
-Current artificial intelligence (AI) reasoning systems score low on ARC-AGI-2 because the challenge is specifically designed to expose their weaknesses in novel visual reasoning, compositional reasoning, and contextual rule application, whereas earlier versions of the benchmark were susceptible to brute-force methods and pattern matching from training data. Unlike ARC-AGI-1, every task in the newer benchmark is unique, demanding a deeper, human-like understanding of concepts rather than just recognizing or adapting pre-learned patterns.  
+Current artificial intelligence (AI) reasoning systems score low on ARC-AGI-2 because the challenge is specifically designed to expose their weaknesses in novel visual reasoning, compositional reasoning, and contextual rule application, whereas earlier versions of the benchmark were susceptible to brute-force methods and pattern matching from training data. Unlike ARC-AGI-1, every task in the newer benchmark is unique, demanding a deeper, human-like understanding of concepts rather than just recognizing or adapting pre-learned patterns.
+
+Optimally, SHYRS would identify all "unusual" characteristics and then test them for significance. Hard to do with such small samples, however. So we cheat. 😈
+
 **Specific challenges of ARC-AGI-2:**
 
 * Novelty: Every ARC-AGI-2 task is entirely unique, and models cannot solve them by finding similar patterns in their training data, a weakness that was exploited in ARC-AGI-1.  
@@ -48,6 +51,10 @@ When trying to pull a stuck sock out of a vacuum hose, I searched for various to
 * **Isolate:** The prediction of application of all beliefs to a minimal group of inputs  
 * **Piece:** a group of squares of the same color that are near each other, as defined by the relevant starting significance hypothesis
 
+#### **Subroutines:** (incomplete)
+* BigPicture: Like reducing resolution or pruning a matrix
+* DeMask: Detection of & removal of possible background masks/layers (like watermarks)
+
 #### **Heuristics:**
 * **Search:** From simple to more complex. For graph search specifically, top to bottom, left to right  
 * **Relationship Complexity:** 
@@ -76,6 +83,7 @@ There's at least three serious problems that require solving:
 #### **Puzzle Solutions:**
 [**1 of 120 Public Evaluation Set V2 - 1ae2feb7**](https://arcprize.org/play?task=1ae2feb7)
 * **Human Solution:** Figure out how the inputs for each line determine repeating pattern of outputs
+* **Necessary Subroutine:** Compartmentalization
 
 * Identify constant colors (Example 1: red & pink, Example 3: red), constants (the red vertical piece in Example 2), inputs (everything left of the constant), & outputs (all the new blocks)  
 * test relationships between everything (I mean everything, including the sizes of the example graphs) for significance (starting with the simplest relationships first)  
@@ -124,118 +132,157 @@ For more details on the solution to any puzzle, check https://human-arc.gptplusp
 [**35 of 400 Public Evaluation Set V1 - 16b78196**](https://arcprize.org/play?task=16b78196)
 [**3 of 120 Public Evaluation Set V2 - 16b78196**](https://arcprize.org/play?task=16b78196)
 * **Human Solution:** Recognize that inputs get “plugged” into constant to fill rectangular “limbs”
+* **Necessary Subroutine:** Linking: SHYRS can filter options by filtering for linkability
+Pieces
 
 [**8 of 120 Public Evaluation Set V2 - 13e47133**](https://arcprize.org/play?task=13e47133)
-* **Human Solution:** Serious abstraction exercise
+* **Human Solution:** Determine that the blocks run laps around the square in a repeating pattern
+* **Necessary Subroutine:** Compartmentalization: Required to identify the simplest sub-puzzle
 
 [**13 of 120 Public Evaluation Set V2 - 21897d95**](https://arcprize.org/play?task=21897d95)
-* **Human Solution:** input & output graphs have inverted sizes
+* **Human Solution:** The L piece signals rotation.
+* **Necessary Subroutine:** BigPicture: identifies the T & L pieces as significant
 
 [**14 of 120 Public Evaluation Set V2 - 221dfab4**](https://arcprize.org/play?task=221dfab4)
 * **Human Solution:** making a trail? Line pattern for sure.
+* **Necessary Subroutine:** Repetition/line, otherwise very straightforward causal relationships
 
 [**16 of 120 Public Evaluation Set V2 - 269e22fb**](https://arcprize.org/play?task=269e22fb)
 * **Human Solution:** This one is fucking crazy. Got to figure out that the output graph is always the same except for color & orientation, which means comparing examples\!
+* **Necessary Subroutine:** BigPicture / Crop: Only the biggest possible picture will solve this puzzle! 😂
 
 [**20 of 120 Public Evaluation Set V2 - 2b83f449**](https://arcprize.org/play?task=2b83f449)
 * **Human Solution:** This puzzle contains a chronological element. No idea how to code that\! 😂
+* **Necessary Subroutine:** Sequence: because it is a two-step puzzle.
 
 [**23 of 120 Public Evaluation Set V2 - 2d0172a1**](https://arcprize.org/play?task=2d0172a1)
 * **Human Solution:** Approximate a square? Fuck me.
+* **Necessary Subroutine:** BigPicture: Filtering out fuzzy details through shrinking? is the entire point of BigPicture
 
 [**29 of 120 Public Evaluation Set V2 - 3a25b0d8**](https://arcprize.org/play?task=3a25b0d8)
 * **Human Solution:** color fill
+* **Necessary Subroutine:** Template (Reverse) / Crop: Identify the output graph "skeleton" as the empty input skeleton & then asking what is missing
 
 [**32 of 120 Public Evaluation Set V2 - 446ef5d2**](https://arcprize.org/play?task=446ef5d2)
-* **Human Solution:** the symbol that communicate outer corner will be interesting to figure out
+* **Human Solution:** three square piece is an anchor of sorts
+* **Necessary Subroutine:** Linking
 
 [**36 of 120 Public Evaluation Set V2 - 4c416de3**](https://arcprize.org/play?task=4c416de3)
 * **Human Solution:** find the odd thing out
+* **Necessary Subroutine:** Template (simple)
 
 [**37 of 120 Public Evaluation Set V2 - 4c7dc4dd**](https://arcprize.org/play?task=4c7dc4dd)
-* **Human Solution:** Puzzle \#1 looks to be filtering out the noise
+* **Human Solution:** Filter out the noise & then parallel contruct the processes
+* **Necessary Subroutine:** DeMask, BigPicture outer boundaries, OddThingOut, ParallelConstruction ⭐️
 
 [**38 of 120 Public Evaluation Set V2 - 4e34c42c**](https://arcprize.org/play?task=4e34c42c)
 * **Human Solution:** another linking puzzle
+* **Necessary Subroutine:** Linking & Template stacking/reduction
 
 [**40 of 120 Public Evaluation Set V2 - 5545f144**](https://arcprize.org/play?task=5545f144)
 * **Human Solution:** Here, fishy, fishy, fishy
+* **Necessary Subroutine:** Sequence
 
 [**46 of 120 Public Evaluation Set V2 - 62593bfd**](https://arcprize.org/play?task=62593bfd)
-* **Human Solution:** something about gravity
+* **Human Solution:** Matching pieces go to the top
+* **Necessary Subroutine:** Classification (similarity)
 
 [**52 of 120 Public Evaluation Set V2 - 6ffbe589**](https://arcprize.org/play?task=6ffbe589)
 * **Human Solution:** each block in the legend causes a 90 degree clockwise rotation for blocks of that color
+* **Necessary Subroutine:** Legend/Sequence
 
 [**56 of 120 Public Evaluation Set V2 - 78332cb0**](https://arcprize.org/play?task=78332cb0)
 * **Human Solution:** linking path
+* **Necessary Subroutine:** DeMask/Link
 
 [**57 of 120 Public Evaluation Set V2 - 7b0280bc**](https://arcprize.org/play?task=7b0280bc)
 * **Human Solution:** pathfinding puzzle
+* **Necessary Subroutine:** Pathfinding (shortest)
 
 [**60 of 120 Public Evaluation Set V2 - 7b80bb43**](https://arcprize.org/play?task=7b80bb43)
 * **Human Solution:** fix the broken path
+* **Necessary Subroutine:** Crop/Classification (similarity) - Only a small part of some of the pieces is relevant. Hint is that the same structure is repeated & is always at the same location as an input/output diff.
 
 [**66 of 120 Public Evaluation Set V2 - 88bcf3b4**](https://arcprize.org/play?task=88bcf3b4)
 * **Human Solution:** whip slap
+* **Necessary Subroutine:** Classification (similarity)/Sequence - Not exactly sure how to determine that the "whip" needs to be moved first to a 45 degree angle and then "slid" over until it is blocked by the obstacle
 
 [**67 of 120 Public Evaluation Set V2 - 88e364bc**](https://arcprize.org/play?task=88e364bc)
-* **Human Solution:** levers & switches
+* **Human Solution:** The legend correlates to the direction in which the single blocks in the same colored container move
+* **Necessary Subroutine:** Legend
 
 [**70 of 120 Public Evaluation Set V2 - 8b7bacbf**](https://arcprize.org/play?task=8b7bacbf)
-* **Human Solution:** flower the path
+* **Human Solution:** light the path
+* **Necessary Subroutine:** Path/Sequence
 
 [**79 of 120 Public Evaluation Set V2 - 9bbf930d**](https://arcprize.org/play?task=9bbf930d)
 * **Human Solution:** two lines \= path
+* **Necessary Subroutine:** Path/Classification (similarity)
 
 [**82 of 120 Public Evaluation Set V2 - a32d8b75**](https://arcprize.org/play?task=a32d8b75)
 * **Human Solution:** combining four different symbols
+* **Necessary Subroutine:** Legend
 
 [**94 of 120 Public Evaluation Set V2 - b9e38dc0**](https://arcprize.org/play?task=b9e38dc0)
 * **Human Solution:** pour out the bag
+* **Necessary Subroutine:** Sequence
 
 [**100 of 120 Public Evaluation Set V2 - d35bdbdc**](https://arcprize.org/play?task=d35bdbdc)
 * **Human Solution:** only flower the end of the path
+* **Necessary Subroutine:** Classification (similarity)
 
 [**108 of 120 Public Evaluation Set V2 - de809cff**](https://arcprize.org/play?task=de809cff)
 * **Human Solution:** packet loss identification
+* **Necessary Subroutine:** BigPicture
 
 [**110 of 120 Public Evaluation Set V2 - e12f9a14**](https://arcprize.org/play?task=e12f9a14)
 * **Human Solution:** colliding beams
+* **Necessary Subroutine:** Sequence
 
 [**116 of 120 Public Evaluation Set V2 - eee78d87**](https://arcprize.org/play?task=eee78d87)
 * **Human Solution:** XOR combined with static output
+* **Necessary Subroutine:** Template/Classification (similarity)
 
 [**117 of 120 Public Evaluation Set V2 - f560132c**](https://arcprize.org/play?task=f560132c)
 * **Human Solution:** another color swirl
+* **Necessary Subroutine:** Legend/Link
 
 [**119 of 120 Public Evaluation Set V2 - faa9f03d**](https://arcprize.org/play?task=faa9f03d)
-* **Human Solution:** fix the paths
+* **Human Solution:** fix the paths & determine which pipe goes on top by the number of gaps, red dots, and possibly gold dots
+* **Necessary Subroutine:** Path/Classification (order)
 
 #### Unsolved ARC-AGI-1 Public Eval Puzzles
 [**58 of 400 Public Evaluation Set V1 - 212895b5**](https://arcprize.org/play?task=212895b5)
 * **Human Solution:** Energy Beams & Lightning
+* **Necessary Subroutine:** Repetition/Sequence - This is one of the simplest puzzles I've seen
 
 [**120 of 400 Public Evaluation Set V1 - 4ff4c9da**](https://arcprize.org/play?task=4ff4c9da)
 * **Human Solution:** either a two step check rows & columns for same shape, or a one step check rows, columns, & diagonals
+* **Necessary Subroutine:** Sequence?/Template
 
 [**125 of 400 Public Evaluation Set V1 - 50f325b5**](https://arcprize.org/play?task=50f325b5)
 * **Human Solution:** shapes of a specific color spread whenever they fit
+* **Necessary Subroutine:** Template
 
 [**192 of 400 Public Evaluation Set V1 - 7d419a02**](https://arcprize.org/play?task=7d419a02)
 * **Human Solution:** Block casts a shadow on other columns
+* **Necessary Subroutine:** BigPicture/Categorization (similarity)
 
 [**209 of 400 Public Evaluation Set V1 - 8b28cd80**](https://arcprize.org/play?task=8b28cd80)
 * **Human Solution:** combine all the examples to determine how the spiral shape has to be applied
+* **Necessary Subroutine:** Template/Crop
 
 [**281 of 400 Public Evaluation Set V1 - b9630600**](https://arcprize.org/play?task=b9630600)
 * **Human Solution:** connect the squares
+* **Necessary Subroutine:** Link (immobile)
 
 [**302 of 400 Public Evaluation Set V1 - c6e1b8da**](https://arcprize.org/play?task=c6e1b8da)
 * **Human Solution:** slide the blocks down the line
+* **Necessary Subroutine:** BigPicture/GuessWhatsHidden
 
 [**381 of 400 Public Evaluation Set V1 - f3b10344**](https://arcprize.org/play?task=f3b10344)
 * **Human Solution:** connect same colored pieces
+* **Necessary Subroutine:** Classification (similarity) / Link (immobile)
 
 #### Solved ARC-AGI-2 Public Eval Puzzles
 
